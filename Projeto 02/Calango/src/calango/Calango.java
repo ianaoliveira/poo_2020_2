@@ -34,7 +34,7 @@ public class Calango {
             System.out.println("Hora do rango!");
             
         } else {
-            System.out.println("Nada de comida pra você!");
+            System.out.println("Hoje não é meu dia de sorte!");
         }
     }
             
@@ -120,7 +120,7 @@ public class Calango {
         Calango deadpool = new Calango(10, 4);
         System.out.println(deadpool);
 
-        for(int i = 0; i < 50; i++)
+        for(int i = 0; i < 150; i++)
             deadpool.correr();
         
         System.out.println(deadpool);
