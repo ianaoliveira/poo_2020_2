@@ -34,23 +34,27 @@ public class Calango {
             System.out.println("Hora do rango!");
             
         } else {
-            System.out.println("Não foi dessa vez!");
+            System.out.println("Nada de comida pra você!");
         }
     }
             
 
     void evoluir () {
-        if (quant_comida == 15) {
+        if (quant_comida == 15 && level != "camaleao") {
             evoluir = true;
-            level += 1;
+            level = "camaleao";
             System.out.println("Parabéns! Você acabou de evoluir e se tornar um camaleão!");
-        } else if (quant_comida == 45) {
+        } else if (quant_comida == 30 && level != "dragao") {
             evoluir = true; 
-            level += 1;
+            level = "dragao";
             System.out.println("Parabéns! Você acabou de evoluir e se tornar um dragão!");  
+        } else if (quant_comida > 16) {
+            evoluir = false;
+            level = "maximo";
+            System.out.println("Você já está no nível máximo.");
         } else {
             evoluir = false;
-        }  
+        }
 
     }
 
