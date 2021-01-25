@@ -106,28 +106,23 @@ public class Lapiseira {
                 int tam; 
                     System.out.println("Digite o calibre do seu grafite:");
                         cal = scanner.nextFloat();
-                        if (cal != lapiseiraum.calibre) {
+                        if (cal != lapiseira.calibre) {
                             System.out.println("ERRO! Calibre incompatível.");
                             break;
                         }
                     System.out.println("Digite o tamanho do seu grafite (em mm):");
                         tam = scannerum.nextInt();
-                    System.out.println("Qual a dureza do seu grafite? | DIGITE UMA DAS OPÇÕES: HB, 2B, 4B E 6B");
-                        drz = scannerdois.nextLine();
-                        if (drz.equals("HB") || drz.equals("2B") || drz.equals("4B") || drz.equals("6B")) {
-                            Grafite grafiteum = new Grafite(cal, drz, tam); 
-                            lapiseiraum.inserir(grafiteum);
                         } else {
                             System.out.println("Dureza inválida.");
                             break;
                         }
 
             } else if (com[0].equals("retirar")) {
-                lapiseiraum.retirar();
+                lapiseira.retirar();
             } else if (com[0].equals("escrever")) {
                 System.out.println("Digite quantas folhas deseja escrever:");
                 int folhas = scanner.nextInt();
-                lapiseiraum.escrever(folhas);
+                lapiseira.escrever(folhas);
             }
         }  
         scanner.close();
