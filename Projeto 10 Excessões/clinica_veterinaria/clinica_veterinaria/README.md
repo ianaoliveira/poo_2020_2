@@ -1,0 +1,2 @@
+# PROJETO 10 - EXCESSÕES 
+Optei por fazer o código da clínica veterinária, fiz o projeto sozinha mas tive que rever a aula e procurar mais informações no YouTube e em fóruns na internet. Consegui compreender o conceito de exceções, utilizando try/catch e utilizando o throw para lançar a excessão. Levei cerca de 5 horas fazendo o código, contando com o tempo que levei revendo a aula e consultando a internet para tirar mais algumas dúvidas simples. 
